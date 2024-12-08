@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+#predictionsTable {
+    table-layout: fixed; /* Ensure fixed layout for consistent cell widths */
+    width: 100%; /* Optional: You can adjust to your needs */
+}
+
+td {
+    width: 60px; /* Set fixed width */
+    height: 50px; /* Set fixed height */
+    overflow: hidden; /* Hide overflow if text is too long */
+    text-overflow: ellipsis; /* Optional: add ellipsis for long text */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 0; /* Adjust padding as needed */
+    font-size: 12px;
+}
+
+/* Container for the DataTable search input */
+.dataTables_filter {
+    display: flex;
+    align-items: center; /* Center vertically */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 24px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    padding: 7px;
+}
+
+.dataTables_filter:hover{
+    border: 1px solid blue;
+}
+/* Style the search input field */
+.dataTables_filter input[type="search"] {
+    width: 300px; /* Set a width */
+    padding: 10px 10px 10px 40px; /* Padding to make space for icon */
+    border: none !important;
+    font-size: 16px; /* Font size */
+    outline: none; /* Remove outline on focus */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+
+/* Adjust the label for the search input */
+.dataTables_filter label {
+    margin-right: 10px; /* Space between label and input */
+}
